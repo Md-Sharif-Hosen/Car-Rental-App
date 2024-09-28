@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('year');
             $table->string('car_type',100);
             $table->decimal('daily_rent_price');
-            $table->boolean('availability');
+            $table->boolean('availability')->default(true);
             $table->string('image',100);
             $table->timestamps();
         });
